@@ -37,6 +37,10 @@ for index, row in df.iterrows():
         json_export_object.append(json_object)
         json_ids.append(row[id_column_name])
 
+
+# Now sort by label
+json_export_object = sorted(json_export_object, key=lambda k: k['label'])
+
 # Export to JSON file
 with open('output.json', 'w', encoding='utf-8') as f:
     json.dump(json_export_object, f, ensure_ascii=False, indent=1)
