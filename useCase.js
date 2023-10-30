@@ -25,6 +25,7 @@ const simplifyCzechTextForSearch = text => {
  * @param municipalityJson {{id: number, label: string, simpleName: string}[]} - Array of municipalities, provided in output.json
  * @returns {{value: number, label: string}[]} - Array of municipalities that match the search query, where value is the id of the municipality
  * @example searchInMunicipalities('ceskytesin', municipalities) // [{value: 1, label: 'Český Těšín (okres Karviná)'}]
+ * @example searchInMunicipalities('adamov', municipalities) // [{value: 581291, label: 'Adamov (okres Blansko)'}, {value: 531367, label: 'Adamov (okres Kutná Hora)'}, {value: 535826, label: 'Adamov (okres České Budějovice)'}]
  */
 
 const searchInMunicipalities = (query, municipalityJson) => {
