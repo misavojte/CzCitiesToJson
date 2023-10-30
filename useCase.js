@@ -24,6 +24,7 @@ const simplifyCzechTextForSearch = text => {
  * @param query {string} - Search query - municipality name which went through simplifyCzechTextForSearch() function
  * @param municipalityJson {{id: number, label: string, simpleName: string}[]} - Array of municipalities, provided in output.json
  * @returns {{value: number, label: string}[]} - Array of municipalities that match the search query, where value is the id of the municipality
+ * @example searchInMunicipalities('ceskytesin', municipalities) // [{value: 1, label: 'Český Těšín (okres Karviná)'}]
  */
 
 const searchInMunicipalities = (query, municipalityJson) => {

@@ -29,7 +29,7 @@ for index, row in df.iterrows():
         "id": row[id_column_name],
         # "name": row[name_column_name],
         # "lau1": row[lau1_column_name],
-        "label": row[name_column_name] + " (" + row[lau1_column_name] + ")",
+        "label": row[name_column_name] + " (okres " + row[lau1_column_name] + ")",
         "simpleName": simplify_czech_text_for_search(row[name_column_name])
     }
     # Only append if there is not a object with the same id
